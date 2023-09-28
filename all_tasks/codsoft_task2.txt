@@ -1,0 +1,39 @@
+import java.util.*;
+public class grade_calculator{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the marks of mathematics out of 100");
+        double math=sc.nextDouble();
+        System.out.println("Enter the marks of physics out of 100");
+        double physics=sc.nextDouble();
+        System.out.println("Enter the marks of chemistry out of 100");
+        double chemistry=sc.nextDouble();
+        System.out.println("Enter the marks of biology out of 100");
+        double biology=sc.nextDouble();
+        double sum=math+physics+chemistry+biology;
+        System.out.println(sum+" is the summation of marks of all subjects");
+        double average=sum/4;//dividing the total marks by the total number of subjects(4-math,physics,chemistry,biology)
+        System.out.println("The average percentage obtained is "+average+" % ");
+        if(average==100)
+        {
+            System.out.println("The grade obtained is A+");
+        }
+        else if(average>=90 && average<100)
+        {
+            System.out.println("The grade obtained is A");
+        }
+        else if(average>=80 && average<90)
+        {
+            System.out.println("The grade obtained is B+");
+        }
+        else if(average>=70 && average<80)
+        {
+            System.out.println("The grade obtained is C");
+        }
+        else{
+            System.out.println("The grade obtained is D");
+        }
+        
+    }
+}
